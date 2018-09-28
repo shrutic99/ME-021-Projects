@@ -17,7 +17,7 @@ for i in newfile:
         longlocation = myinfo[0].split('°')
         latlocation = myinfo[1].split('°')
 
-        ## extracting number before north or south
+        ## extracting number before north or south (:)
         ## using the find function as a way to print the numbers until the function finds N, S, E, or W
         longitude = (longlocation[1][:longlocation[1].find('N'or 'S')])
         latitude = (latlocation[1][:latlocation[1].find('W' or 'E')])

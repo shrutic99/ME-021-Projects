@@ -14,3 +14,6 @@ city_data = data{3};
 % end
 input_city = 'San Diego'; 
 a = strcmp (city_data, input_city); 
+
+fclose(file); 
+
