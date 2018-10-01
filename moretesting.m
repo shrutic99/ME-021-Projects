@@ -1,19 +1,39 @@
-file = fopen('cities.txt','r'); 
-data = textscan(file,'%s%s%s%s%s','Delimiter','\t','Headerlines',1);
-city_data = data{3}; 
-
-% str1 = 'ABC'
-% str2 = 'abc'
+% clear all
+% clc
 % 
-% a = strcmp(s1,s2)
+% input_city = 'Caracas'; 
 % 
-% if a=1
-%     disp('not case sensitive')
-% else
-%     disp('case sensitive')
-% end
-input_city = 'San Diego'; 
-a = strcmp (city_data, input_city); 
+% file = fopen('cities.txt','r');
+% data = textscan(file,'%s%s%s%s%s','Delimiter','\t','Headerlines',1);
+% 
+% % 
+% 
+% data = data{3}; 
+% disp(data); 
+% disp(city_data); 
 
-fclose(file); 
+% % str1 = 'ABC';
+% % str2 = 'abc';
+% % 
+% % a = strcmp(str1,str2);
+% % 
+% % if a=1:
+% %     disp('not case sensitive')
+% % else
+% %     disp('case sensitive')
+% % end
+
+s1 = 'and';
+s2 = 'the and';
+g = strcmp(s1,s2); 
+
+if g == 0
+    fprintf('this sucks \n');
+else
+    fprintf('it worked \n'); 
+end
+    
+% a = strcmp (city_data, input_city); 
+% 
+% % fclose(file); 
 
