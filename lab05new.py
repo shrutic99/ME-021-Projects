@@ -16,12 +16,14 @@ for i in newfile:
         ## taking out the degree symbol 
         longlocation = myinfo[0].split('°')
         latlocation = myinfo[1].split('°')
+        print(longlocation)
+        print(latlocation)
 
         ## extracting number before north or south (:)
         ## using the find function as a way to print the numbers until the function finds N, S, E, or W
         longitude = (longlocation[1][:longlocation[1].find('N'or 'S')])
         latitude = (latlocation[1][:latlocation[1].find('W' or 'E')])
-
+        print (longitude)
         ## finds the location of N, S, E, and W
         dNS = longlocation[1].find('N' or 'S')
         dWE = latlocation[1].find('W' or 'E')
@@ -29,6 +31,7 @@ for i in newfile:
         ## takes the indexed location to print the specific index
         NS = longlocation[1][dNS]
         WE = latlocation[1][dWE]
+        print(NS)
 
         print (city + ' is ' + longlocation[0] + ' degrees ' + longitude + ' minutes ' + NS + ' and '+ latlocation[0] + ' degrees ' + latitude + ' minutes ' + WE)
         found = 1

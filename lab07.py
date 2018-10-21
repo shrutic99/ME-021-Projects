@@ -1,7 +1,7 @@
 #Creating the class with the most basic 'object'
 class Mortgage(object):
 
-    #Initializing and creating a self to later make an object as m1
+    #Initializing (constructors) and creating a self to later make an object as m1
     #Creating/initializing three variables to put into the second method
     def __init__(self, pr, inte, no):
         self.p = pr

@@ -355,7 +355,7 @@ Latitude	Longitude	City	Province/State	Country
 42°14N	43°58E	Tskhinvali	South Ossetia	Georgia South Ossetia (disputed)
 42°02N	13°25E	Avezzano	Abruzzo	Italy
 42°00N	21°26E	Skopje	N/A	Macedonia
-41°59'N	82°56'W	Colchester	Ontario	Canada
+41°59N	82°56W	Colchester	Ontario	Canada
 41°54N	12°30E	Rome	Lazio	Italy
 41°54N	12°27E	Vatican City	N/A	Vatican City
 41°53N	87°38W	Chicago	Illinois	United States
