@@ -3,7 +3,7 @@ clc
 
 s1 = input('What state do you want to visit? ', 's'); 
 
-myfile = fopen('cities.txt', 'r'); 
+myfile = fopen('cities (1).txt', 'r'); 
 header = fgetl(myfile); 
 
 frewind(myfile); 
@@ -13,17 +13,37 @@ filedata = textscan (myfile, '%s%s%s%s%s', 'Delimiter', '\t', 'header', 1);
 %find cities in big list, keeps count of how many
 %times you find one 
 count = 0;
+city = 0;
 for x=1:length(filedata{1,4})
-    if (strcmp(filedata{1,4}{x},s1))
-        count = count + 1;
-        for y=1:3
-            fprintf(filedata{1,y}{x});
-            disp(' ');
+%     if (count ~= 1)
+        if (strcmp(filedata{1,4}{x},s1))
+            count = count + 1;
+            city = x;
+            for y=3
+                %fprintf(filedata{1,y}{x});
+                fprintf(filedata{1,y}{x});
+                disp(' ');
+                
+%                 cityArray = zeros(1, count);
+%                 cityArray(1,count) = filedata{1:y}{x};
+%                 disp(cityArray);
+%                 
+%                 
+                
+            end
+            disp(' '); 
+            disp(lat_proj1(city));
+            disp(long_proj1(city));
+            
+            
+            %disp(distance(city));
         end
-    end
+    
+    %end
 end
 %populating array of cities 
 for a=1:count
+    
 end
 
 

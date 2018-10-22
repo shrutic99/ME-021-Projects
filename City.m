@@ -5,8 +5,8 @@ classdef City
         name
     end
     methods
-        function latDec(la)
-            myfile = fopen('cities.txt', 'r'); 
+        function latDec(obj)
+            myfile = fopen('cities (1).txt', 'r'); 
             header = fgetl(myfile); 
             filedata = textscan (myfile, '%s%s%s%s%s', 'Delimiter', '\t', 'header', 1);
 
@@ -20,7 +20,7 @@ classdef City
             locationDegLat = str2double(longData(1,1), extractBefore('°')); 
             locationMinLat = str2double(longData(1,1), extractAfter('°'));
             
-            la = locationDegLat + (locationMinLat/60); 
+            obj.la = locationDegLat + (locationMinLat/60); 
            
             
         end
